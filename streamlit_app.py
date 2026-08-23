@@ -185,7 +185,7 @@ def render_predictions(data: dict):
         class_id = pred["predicted_class_id"]
         color = CLASS_COLORS[class_id]
         name = pred["predicted_class_name"].replace("_", " ")
-        conf = pred["probabilites"][class_id] * 100
+        conf = pred["probabilities"][class_id] * 100
 
         with st.container():
             st.markdown(
