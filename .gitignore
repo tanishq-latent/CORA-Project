@@ -1,4 +1,3 @@
-*.onnx.data
 __pycache__/
 *.pyc
 *.pyo
