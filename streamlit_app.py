@@ -122,7 +122,7 @@ st.markdown(
 
 with st.sidebar:
     st.markdown("### Connection")
-    api_base = "https://cora-project.onrender.com/"
+    api_base = st.text_input("API base URL", value="https://cora-project.onrender.com").rstrip("/")
 
     if st.button("Check health", use_container_width=True):
         st.session_state["_check_health"] = True
