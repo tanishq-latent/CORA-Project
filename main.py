@@ -203,5 +203,5 @@
             request.node_indices
         )
 
-    if os.path.isdir(STATIC_DIR):
+if os.path.isdir(STATIC_DIR):
         app.mount("/", StaticFiles(directory=STATIC_DIR, html=True),name="static")
