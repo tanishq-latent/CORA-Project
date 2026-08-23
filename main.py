@@ -48,19 +48,6 @@ model_session = ort.InferenceSession(MODEL_PATH, providers=["CPUExecutionProvide
 
 app = FastAPI()
 
-from fastapi.middleware.cors import CORSMiddleware
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # or restrict to your Streamlit app's URL
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-
-
-
-
 
 """
 Request formats: these describes what JSON data user must send us.
