@@ -205,7 +205,7 @@ def render_predictions(data: dict):
             df = pd.DataFrame(
                 {
                     "topic": [c.replace("_", " ") for c in CORA_CLASSES.values()],
-                    "probability": pred["probabilites"],
+                    "probability": pred["probabilities"],
                     "class_id": list(CORA_CLASSES.keys()),
                 }
             ).sort_values("probability", ascending=True)
